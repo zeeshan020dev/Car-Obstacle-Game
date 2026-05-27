@@ -1,12 +1,18 @@
 # Car Obstacle Game
 
-[![Unity](https://img.shields.io/badge/Unity-2021.3%2B-black?logo=unity)](https://unity.com/)
+[![Unity](https://img.shields.io/badge/Engine-Unity%202021.3%2B-000000?logo=unity)](https://unity.com/)
 [![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-PC-blue)](https://unity.com/)
+[![URP](https://img.shields.io/badge/Render%20Pipeline-URP-4A90E2)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest)
+[![Target](https://img.shields.io/badge/Target-PC%20%2F%20Desktop-blue)](https://unity.com/)
+[![License](https://img.shields.io/badge/License-MIT-success)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Playable-brightgreen)](README.md)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-orange)](LICENSE)
 
 > A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.
+
+**Project snapshot:** third-person driving, coin collection, obstacle avoidance, win/lose states, and menu-driven scene flow.
+
+---
 
 ## Table of Contents
 
@@ -31,6 +37,17 @@
 Car Obstacle Game is a Unity-based obstacle driving game built around a simple and readable gameplay loop: drive forward, collect score pickups, avoid hazards, and hit the finish trigger to win. The project includes a menu scene, pause/resume flow, game-over handling, and scene restart logic, making it a solid example of core Unity gameplay systems working together.
 
 The repository is especially suitable for a portfolio because it demonstrates practical use of Unity physics, trigger events, UI panels, scene management, TextMesh Pro, and chase-camera behavior in a small but complete game.
+
+## At a Glance
+
+| Item | Details |
+| --- | --- |
+| Engine | Unity 2021.3 LTS or newer |
+| Language | C# |
+| Genre | Obstacle driving / arcade racer |
+| Platform | PC / Desktop |
+| Rendering | Universal Render Pipeline |
+| License | MIT |
 
 ## Features
 
@@ -133,6 +150,8 @@ If references appear missing after import, verify that TextMesh Pro and the bund
 
 Add exported screenshots here to showcase the game visually in the repository.
 
+Use consistent image sizes and place the files under `docs/screenshots/` so GitHub renders them cleanly.
+
 ### Gameplay Preview
 
 ![Gameplay Screenshot](docs/screenshots/gameplay.png)
@@ -168,6 +187,8 @@ Contributions are welcome. If you plan to improve the project:
 3. Keep changes focused and well named.
 4. Test the project in Unity before submitting a pull request.
 5. Match the existing scene, naming, and script conventions.
+
+Please keep pull requests focused and include screenshots or short notes when changing gameplay or UI behavior.
 
 ## License
 
