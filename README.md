@@ -1,110 +1,137 @@
 # Car Obstacle Game
 
 [![Unity](https://img.shields.io/badge/Unity-2021.3%2B-black?logo=unity)](https://unity.com/)
+[![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-PC-blue)](https://unity.com/)
 [![Status](https://img.shields.io/badge/Status-Playable-brightgreen)](README.md)
 
-> A fast-paced 3D car obstacle game built in Unity where the player drives through a low-poly road environment, collects coins, avoids hazards, and reaches the finish line to win.
+> A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Gameplay Mechanics](#gameplay-mechanics)
+- [Controls](#controls)
+- [Technologies Used](#technologies-used)
+- [Unity Version Compatibility](#unity-version-compatibility)
+- [Folder Structure](#folder-structure)
+- [Scripts and Modules](#scripts-and-modules)
+- [Installation and Setup](#installation-and-setup)
+- [How to Play](#how-to-play)
+- [Screenshots](#screenshots)
+- [Future Improvements](#future-improvements)
+- [Contribution Guidelines](#contribution-guidelines)
+- [License](#license)
+- [Author](#author)
 
 ## Overview
 
-Car Obstacle Game is a Unity-based driving game focused on simple, responsive gameplay and clear win/lose conditions. The player controls a car using keyboard input, navigates road environments assembled from asset-pack content, collects score-boosting coins, and must avoid obstacle collisions that trigger a game-over state. The project also includes a main menu, pause/resume flow, restart logic, and a dedicated victory trigger.
+Car Obstacle Game is a Unity-based obstacle driving game built around a simple and readable gameplay loop: drive forward, collect score pickups, avoid hazards, and hit the finish trigger to win. The project includes a menu scene, pause/resume flow, game-over handling, and scene restart logic, making it a solid example of core Unity gameplay systems working together.
 
-This repository is well suited for a portfolio because it demonstrates core Unity systems working together: physics-based collisions, trigger interactions, UI state management, scene loading, camera follow behavior, and TextMesh Pro score updates.
+The repository is especially suitable for a portfolio because it demonstrates practical use of Unity physics, trigger events, UI panels, scene management, TextMesh Pro, and chase-camera behavior in a small but complete game.
 
 ## Features
 
-- 🚗 Player-controlled car movement with forward motion and steering
-- 🪙 Collectible coin system with score tracking
-- 💥 Obstacle collision handling and game-over UI
-- 🏁 Win-condition trigger at the finish point
-- ⏸️ Pause, resume, and restart controls
-- 🎥 Third-person camera follow behavior
-- 🖥️ Main menu scene with play and quit actions
-- 🎨 Low-poly racing environment using imported asset packs
+- 🚗 Third-person car movement with steering and forward drive
+- 🪙 Coin pickups with score updates
+- 💥 Obstacle collision detection with game-over state
+- 🏁 Finish trigger with win screen
+- ⏸️ Pause, resume, and restart flow
+- 🎥 Simple camera follow system for gameplay visibility
+- 🖥️ Main menu with play and quit actions
+- 🎨 Imported low-poly road and vehicle assets
 
 ## Gameplay Mechanics
 
 | Mechanic | Description |
 | --- | --- |
-| Movement | The player car moves with the vertical input axis and rotates with the horizontal axis. |
-| Collision | Hitting objects tagged as Obstacle activates the game-over panel and pauses the game. |
-| Collectibles | Coins use trigger detection to award points and disappear after pickup. |
-| Win state | Reaching the finish trigger shows the win panel and freezes time. |
-| Restart flow | Both game-over and win states support restarting the current scene. |
-| Camera | The camera follows the car with a fixed positional offset for a chase-view setup. |
+| Movement | The player car uses the vertical axis for forward motion and the horizontal axis for rotation. |
+| Collision | Colliding with objects tagged as `Obstacle` activates the game-over panel and pauses time. |
+| Collectibles | Coins use trigger detection to increment score and are removed after pickup. |
+| Win state | Entering the finish trigger displays the win panel and freezes the game. |
+| Restart flow | Win and game-over states both support restarting the current scene. |
+| Camera | The camera follows the car using a fixed offset to maintain a chase view. |
+
+## Controls
+
+| Input | Action |
+| --- | --- |
+| `W` / `S` or `Up` / `Down` | Move the car forward or backward |
+| `A` / `D` or `Left` / `Right` | Rotate the car left or right |
+| Mouse / UI buttons | Navigate menu, pause, restart, and quit actions |
 
 ## Technologies Used
 
 | Technology | Purpose |
 | --- | --- |
-| Unity | Game engine and scene management |
-| C# | Gameplay scripting |
-| TextMesh Pro | Score UI rendering |
-| Unity Input Manager | Keyboard movement input |
+| Unity | Game engine, scenes, physics, and UI |
+| C# | Gameplay scripting and scene control |
+| TextMesh Pro | Score and UI text rendering |
+| Unity Input Manager | Keyboard input handling |
 | Unity Physics | Collisions and trigger events |
-| Universal Render Pipeline | Modern rendering setup |
+| Universal Render Pipeline | Rendering pipeline setup |
 
 ## Unity Version Compatibility
 
 Recommended for **Unity 2021.3 LTS or newer**.
 
-This project uses the legacy Input Manager API (`Input.GetAxis`), TextMesh Pro, scene loading, and standard Unity physics callbacks. It should remain compatible with Unity versions that support these systems without additional package migration.
+This project uses the legacy Input Manager API (`Input.GetAxis`), standard Unity physics callbacks, scene loading, and TextMesh Pro. Those systems are broadly supported across LTS releases, so the project should open cleanly in modern Unity versions without a large migration effort.
 
 ## Folder Structure
 
 | Path | Purpose |
 | --- | --- |
-| `Scenes/` | Main gameplay, menu, and sample scenes |
-| `Resources/` | Runtime resource and test metadata |
-| `ARCADE - FREE Racing Car/` | Road, skybox, texture, and vehicle asset-pack content |
-| `BrokenVector/` | Low-poly road pack assets |
-| `Obstacle Pack/` | Obstacle models, prefabs, materials, and related assets |
-| `SportCar/` | Car asset pack content and settings |
-| `PolyKebap/` | Additional collectible or gameplay-related assets |
-| `SyntyStudios/` | Imported Synty asset-pack content |
-| `TextMesh Pro/` | TMP resources and package support files |
-| `*.cs` files in root | Gameplay scripts controlling player, UI, scoring, and scenes |
+| `Scenes/` | Main menu, sample scene, and road demo scenes |
+| `Resources/` | Runtime and test metadata used by Unity |
+| `ARCADE - FREE Racing Car/` | Imported racing car and road environment assets |
+| `BrokenVector/` | Low-poly road pack content |
+| `Obstacle Pack/` | Obstacle models, prefabs, and materials |
+| `SportCar/` | Vehicle asset pack and related configuration files |
+| `PolyKebap/` | Additional asset-pack content used by the project |
+| `SyntyStudios/` | Imported Synty assets and metadata |
+| `TextMesh Pro/` | TMP resources and supporting files |
+| Root `*.cs` files | Core gameplay scripts for movement, UI, scoring, and scene flow |
 
 ## Scripts and Modules
 
 | Script | Responsibility |
 | --- | --- |
-| `playerMovement.cs` | Reads horizontal and vertical input to move and rotate the player car. |
-| `cameraFollow.cs` | Keeps the camera positioned behind the player with a fixed offset. |
-| `PlayerCollision.cs` | Detects obstacle collisions and shows the game-over panel. |
-| `Coin.cs` | Awards score when the player collects a coin and destroys the pickup. |
-| `CoinCollectible.cs` | Alternate collectible script that handles pickup detection and object removal. |
-| `ScoreManager.cs` | Singleton score controller that updates the TextMesh Pro score label. |
-| `gameManager.cs` | Handles pause, resume, and restart behavior for the active scene. |
-| `MainMenu.cs` | Main menu actions for starting the game and quitting the application. |
-| `WinCondition.cs` | Detects the finish trigger, shows the win panel, and allows restart. |
-| `SportCar/Settings/Racing_Game.cs` | Asset-pack support or configuration script bundled with the imported car content. |
+| `playerMovement.cs` | Reads input and moves/rotates the player vehicle. |
+| `cameraFollow.cs` | Keeps the camera aligned to the player with a fixed offset. |
+| `PlayerCollision.cs` | Shows the game-over UI when the player collides with obstacles. |
+| `Coin.cs` | Handles coin pickup scoring and destroys collected coins. |
+| `CoinCollectible.cs` | Alternate collectible script for pickup interaction. |
+| `ScoreManager.cs` | Singleton score system that updates the TextMesh Pro display. |
+| `gameManager.cs` | Controls pause, resume, and scene restart actions. |
+| `MainMenu.cs` | Starts the game scene or quits the application from the menu. |
+| `WinCondition.cs` | Detects the finish trigger and shows the win panel. |
+| `SportCar/Settings/Racing_Game.cs` | Asset-pack support script included with the imported vehicle content. |
 
 ## Installation and Setup
 
-1. Clone or download this repository.
+1. Clone or download the repository.
 2. Open the project folder in Unity Hub.
-3. Use a compatible Unity version, preferably **2021.3 LTS or newer**.
-4. Let Unity import the assets and resolve any package prompts.
-5. Open the `Scenes/Main Menu.unity` scene to begin.
-6. Press Play to test the menu and load into gameplay.
+3. Select a compatible editor version, ideally **Unity 2021.3 LTS or newer**.
+4. Let Unity import the project assets and resolve packages.
+5. Open `Scenes/Main Menu.unity`.
+6. Press Play to launch the game from the editor.
 
-If the project opens with missing references, make sure the imported asset packs and TextMesh Pro resources are fully imported.
+If references appear missing after import, verify that TextMesh Pro and the bundled asset packs are fully imported.
 
 ## How to Play
 
-1. Start from the main menu and launch the game.
+1. Launch the game from the main menu.
 2. Use the keyboard controls to drive the car.
-3. Avoid obstacle objects tagged as `Obstacle`.
-4. Collect coins to increase your score.
-5. Reach the finish trigger to win.
-6. Use the restart button on the win or game-over screen to try again.
+3. Avoid obstacles tagged `Obstacle`.
+4. Collect coins to raise your score.
+5. Reach the finish trigger to complete the level.
+6. Use the on-screen restart button after a win or loss to play again.
 
 ## Screenshots
 
-Add your exported images here to make the repository more visually compelling.
+Add exported screenshots here to showcase the game visually in the repository.
 
 ### Gameplay Preview
 
@@ -124,33 +151,33 @@ Add your exported images here to make the repository more visually compelling.
 
 ## Future Improvements
 
-- Add touch or gamepad controls for broader platform support
-- Introduce multiple levels with increasing obstacle complexity
-- Improve vehicle physics and drifting behavior
-- Add sound effects, background music, and polish effects
-- Expand UI with countdown, combo, and high-score systems
-- Replace placeholder collectible logic with one unified pickup system
-- Add an options menu for volume and graphics settings
+- Add gamepad and touch input support
+- Expand the game into multiple levels or courses
+- Improve vehicle physics and steering feel
+- Add music, sound effects, and feedback polish
+- Introduce high scores and run statistics
+- Unify collectible scripts into a single pickup system
+- Add a settings menu for audio and graphics options
 
 ## Contribution Guidelines
 
-Contributions are welcome. If you want to improve the project:
+Contributions are welcome. If you plan to improve the project:
 
 1. Fork the repository.
 2. Create a feature branch.
-3. Make focused changes with clear commit messages.
-4. Test the project in Unity before opening a pull request.
-5. Keep changes consistent with the current scene and script structure.
+3. Keep changes focused and well named.
+4. Test the project in Unity before submitting a pull request.
+5. Match the existing scene, naming, and script conventions.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-You are free to use, modify, and distribute the code under the terms described in the license file.
+You may use, modify, and distribute the project under the terms in the license file.
 
 ## Author
 
 **Muhammad Zeeshan Islam**
 
-If you use this project in your portfolio or as a base for a new game, please credit the original author and keep the license notice intact.
+If you use this project in your portfolio or build on top of it, please keep the attribution and license notice intact.
 
