@@ -1,16 +1,29 @@
+<div align="center">
+
 # Car Obstacle Game
 
-[![Unity](https://img.shields.io/badge/Engine-Unity%202021.3%2B-000000?logo=unity)](https://unity.com/)
-[![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
-[![URP](https://img.shields.io/badge/Render%20Pipeline-URP-4A90E2)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest)
-[![Target](https://img.shields.io/badge/Target-PC%20%2F%20Desktop-blue)](https://unity.com/)
-[![License](https://img.shields.io/badge/License-MIT-success)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Playable-brightgreen)](README.md)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-orange)](LICENSE)
+<p>
+	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-000000?logo=unity" alt="Unity" />
+	<img src="https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white" alt="C#" />
+	<img src="https://img.shields.io/badge/Render%20Pipeline-URP-4A90E2" alt="URP" />
+	<img src="https://img.shields.io/badge/Target-PC%20%2F%20Desktop-blue" alt="Target" />
+	<img src="https://img.shields.io/badge/License-MIT-success" alt="License" />
+	<img src="https://img.shields.io/badge/Status-Playable-brightgreen" alt="Status" />
+</p>
 
-> A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.
+<p><strong>A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.</strong></p>
 
-**Project snapshot:** third-person driving, coin collection, obstacle avoidance, win/lose states, and menu-driven scene flow.
+<p><em>Third-person driving · Coin collection · Obstacle avoidance · Win / lose flow · Menu-driven scene progression</em></p>
+
+</div>
+
+## Gameplay GIF
+
+<p align="center">
+	<img src="docs/gifs/gameplay.gif" alt="Gameplay GIF placeholder" width="800" />
+</p>
+
+> Replace `docs/gifs/gameplay.gif` with an exported gameplay GIF or short loop from the finished game.
 
 ---
 
@@ -50,6 +63,41 @@ The repository is especially suitable for a portfolio because it demonstrates pr
 | License | MIT |
 
 ## Features
+
+<table>
+	<tr>
+		<td width="50%">
+			<h3>🚗 Core Driving</h3>
+			<p>Responsive car movement with steering, forward motion, and a clean chase-camera setup.</p>
+		</td>
+		<td width="50%">
+			<h3>🪙 Score Loop</h3>
+			<p>Collectible coins increase score through a lightweight TextMesh Pro-powered score system.</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%">
+			<h3>💥 Challenge States</h3>
+			<p>Obstacle collisions trigger a game-over screen, while the finish line activates a win state.</p>
+		</td>
+		<td width="50%">
+			<h3>⏸️ UI Flow</h3>
+			<p>Pause, resume, restart, and menu navigation are supported through in-game UI controls.</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%">
+			<h3>🎨 Asset-Rich Environment</h3>
+			<p>Built with imported low-poly road, vehicle, and obstacle assets for a polished arcade look.</p>
+		</td>
+		<td width="50%">
+			<h3>🖥️ Portfolio Ready</h3>
+			<p>Designed to demonstrate Unity scripting, scene management, physics, and UI integration.</p>
+		</td>
+	</tr>
+</table>
+
+## Features Summary
 
 - 🚗 Third-person car movement with steering and forward drive
 - 🪙 Coin pickups with score updates
