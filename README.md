@@ -3,12 +3,19 @@
 # Car Obstacle Game
 
 <p>
-	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-000000?logo=unity" alt="Unity" />
-	<img src="https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white" alt="C#" />
-	<img src="https://img.shields.io/badge/Render%20Pipeline-URP-4A90E2" alt="URP" />
-	<img src="https://img.shields.io/badge/Target-PC%20%2F%20Desktop-blue" alt="Target" />
-	<img src="https://img.shields.io/badge/License-MIT-success" alt="License" />
-	<img src="https://img.shields.io/badge/Status-Playable-brightgreen" alt="Status" />
+	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-000000?logo=unity&logoColor=white&style=for-the-badge" alt="Unity" />
+	<img src="https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white&style=for-the-badge" alt="C#" />
+	<img src="https://img.shields.io/badge/Platform-PC%20%2F%20Desktop-blue?style=for-the-badge&logo=windows11&logoColor=white" alt="Platform" />
+	<img src="https://img.shields.io/badge/Rendering-URP-4A90E2?style=for-the-badge" alt="URP" />
+	<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="License" />
+	<img src="https://img.shields.io/badge/Status-Playable-brightgreen?style=for-the-badge" alt="Status" />
+</p>
+
+<p>
+	<img src="https://img.shields.io/github/stars/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub stars" />
+	<img src="https://img.shields.io/github/forks/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub forks" />
+	<img src="https://img.shields.io/github/issues/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub issues" />
+	<img src="https://img.shields.io/github/contributors/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub contributors" />
 </p>
 
 <p><strong>A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.</strong></p>
