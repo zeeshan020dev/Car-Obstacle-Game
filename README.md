@@ -15,7 +15,6 @@
 	<img src="https://img.shields.io/github/stars/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub stars" />
 	<img src="https://img.shields.io/github/forks/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub forks" />
 	<img src="https://img.shields.io/github/issues/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub issues" />
-	<img src="https://img.shields.io/github/contributors/zeeshan020dev/Car-Obstacle-Game?style=for-the-badge&logo=github&color=181717" alt="GitHub contributors" />
 </p>
 
 <p><strong>A compact 3D Unity driving game where you steer through a low-poly road course, collect coins, avoid obstacles, and reach the finish line to win.</strong></p>
