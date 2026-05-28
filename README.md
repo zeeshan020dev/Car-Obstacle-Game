@@ -255,5 +255,7 @@ You may use, modify, and distribute the project under the terms in the license f
 
 **[Muhammad Zeeshan Islam](https://github.com/zeeshan020dev)**
 
+[![GitHub](https://img.shields.io/badge/GitHub-zeeshan020dev-black?logo=github)](https://github.com/zeeshan020dev)
+
 If you use this project in your portfolio or build on top of it, please keep the attribution and license notice intact.
 
