@@ -244,13 +244,23 @@ This project is licensed under the [MIT License](LICENSE).
 
 You may use, modify, and distribute the project under the terms in the license file.
 
-## Author
+## Author ✍️
 
-**[Muhammad Zeeshan Islam](https://github.com/zeeshan020dev)**
+Click the box below to visit the author's GitHub profile and explore more projects, open-source work, and contributions.
 
-<a href="https://github.com/zeeshan020dev">
-  <img src="https://img.shields.io/badge/GitHub-zeeshan020dev-ffffff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
-</a>
-
-
-If you use this project in your portfolio or build on top of it, please keep the attribution and license notice intact.
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="220px">
+        <a href="https://github.com/zeeshan020dev">
+          <img src="https://github.com/zeeshan020dev.png?size=100" width="100px;" alt="Muhammad Zeeshan Islam"/>
+          <br />
+          <sub><b>Muhammad&nbsp;Zeeshan&nbsp;Islam</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/zeeshan020dev" title="GitHub Profile">💻</a>
+        <a href="https://github.com/zeeshan020dev" title="Documentation">📖</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
