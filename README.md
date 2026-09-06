@@ -17,16 +17,6 @@
 
 </div>
 
-## Gameplay GIF
-
-<p align="center">
-	<img src="docs/gifs/gameplay.gif" alt="Gameplay GIF placeholder" width="800" />
-</p>
-
-> Replace `docs/gifs/gameplay.gif` with an exported gameplay GIF or short loop from the finished game.
-
----
-
 ## Table of Contents
 
 - [Overview](#overview)
