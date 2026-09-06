@@ -184,28 +184,6 @@ If references appear missing after import, verify that TextMesh Pro and the bund
 5. Reach the finish trigger to complete the level.
 6. Use the on-screen restart button after a win or loss to play again.
 
-## Screenshots
-
-Add exported screenshots here to showcase the game visually in the repository.
-
-Use consistent image sizes and place the files under `docs/screenshots/` so GitHub renders them cleanly.
-
-### Gameplay Preview
-
-![Gameplay Screenshot](docs/screenshots/gameplay.png)
-
-### Main Menu
-
-![Main Menu Screenshot](docs/screenshots/main-menu.png)
-
-### Game Over
-
-![Game Over Screenshot](docs/screenshots/game-over.png)
-
-### Win Screen
-
-![Win Screen Screenshot](docs/screenshots/win-screen.png)
-
 ## Future Improvements
 
 - Add gamepad and touch input support
